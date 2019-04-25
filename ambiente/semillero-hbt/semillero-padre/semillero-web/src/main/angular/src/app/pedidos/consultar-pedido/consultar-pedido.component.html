@@ -1,0 +1,32 @@
+<form>
+        <div class="form-group">
+          <label for="IdP">Id Pedido</label>
+          <input  class="form-control" id="IdP" placeholder="Codigo Pedido">
+         
+        </div>
+       
+               <button type="submit" class="btn btn-primary" onclick="consultarPedido">Consultar</button>
+               <button type="submit" class="btn btn-primary" routerLink="crearPedido">Crear Pedido</button>
+      </form>
+
+      <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Cantidad</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr *ngFor="let item of pedidoConsultado.productos">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.nombre}}</td>
+                <td>{{item.valor}}</td>
+                <td>{{item.cantidad}}</td>
+              </tr> 
+              
+            </tbody>
+          </table>

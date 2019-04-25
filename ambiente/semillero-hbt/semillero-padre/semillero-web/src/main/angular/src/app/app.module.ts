@@ -6,10 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { APP_BASE_HREF } from '@angular/common';
+import { ConsultarPedidoComponent } from './pedidos/consultar-pedido/consultar-pedido.component';
+import { CrearPedidoComponent } from './crear-pedido/crear-pedido.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ConsultarPedidoComponent,
+    CrearPedidoComponent
   ],
   imports: [
     BrowserModule,

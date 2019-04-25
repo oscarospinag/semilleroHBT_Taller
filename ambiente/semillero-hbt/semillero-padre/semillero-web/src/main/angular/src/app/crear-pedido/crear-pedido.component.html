@@ -1,0 +1,31 @@
+<form>
+  <div class="form-group">
+    <label for="idP">Codigo pedido</label>
+    <input class="form-control" id="idP" placeholder="Numero de pedido">
+
+  </div>
+  <div class="form-group">
+    <label for="nombreCliente">Nombre Cliente</label>
+    <input class="form-control" id="nombreCliente" placeholder="Ingrese nombre cliente">
+  </div>
+  <div class="form-group">
+    <label for="nombreProducto">Seleccione el producto</label>
+    <select class="custom-select mr-sm-2" id="nombreProducto">
+      <option selected>Bedidas y Comidas</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="valor">Valor del Producto</label>
+    <input class="form-control" id="valor" placeholder="Ingrese valor a pagar">
+  </div>
+  <div class="form-group">
+    <label for="cantidad">Cantidad de producto</label>
+    <input class="form-control" id="cantidad" placeholder="Ingrese la cantidad">
+  </div>
+  <button type="submit" class="btn btn-primary" onclick="consultarPedido">Guardar</button>
+  <button type="access" class="btn btn-primary" onclick="consultarPedido">Adicionar Producto </button>
+</form>
